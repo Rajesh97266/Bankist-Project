@@ -66,16 +66,16 @@ message.style.height =
 //attributes
 
 const logo = document.querySelector('.nav__logo');
-console.log(logo.src);
-console.log(logo.alt);
-logo.alt = 'Beautiful Minimalistic logo';
-console.log(logo.alt);
-logo.setAttribute('alt', 'Bankist');
-console.log(logo.getAttribute('src'));
+// // console.log(logo.src);
+// // console.log(logo.alt);
+// logo.alt = 'Beautiful Minimalistic logo';
+// // console.log(logo.alt);
+// logo.setAttribute('alt', 'Bankist');
+// console.log(logo.getAttribute('src'));
 
-const link = document.querySelector('.twitter-link');
-console.log(link.href);
-console.log(link.getAttribute('href'));
+// const link = document.querySelector('.twitter-link');
+// console.log(link.href);
+// console.log(link.getAttribute('href'));
 
 //classes
 
@@ -90,3 +90,29 @@ document
       .querySelector('#section--1')
       .scrollIntoView({ behavior: 'smooth' });
   });
+
+// //rgb(255,255,255)
+// //rgb(179,24,175)
+// const randomInt = (min, max) =>
+//   Math.floor(Math.random() * (max - min + 1) + min);
+// const randomColor = () =>
+//   `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+// console.log(randomColor());
+
+// document.querySelector('.nav__link').addEventListener('click', function (e) {
+//   // e.stopPropagation();
+//   this.style.backgroundColor = randomColor();
+//   // e.stopPropagation();
+// });
+
+// document.querySelector('.nav__links').addEventListener('click', function (e) {
+//   this.style.backgroundColor = randomColor();
+//   // e.stopPropagation();
+// });
+// document.querySelector('.nav').addEventListener(
+//   'click',
+//   function (e) {
+//     this.style.backgroundColor = randomColor();
+//   },
+//   true
+// );
