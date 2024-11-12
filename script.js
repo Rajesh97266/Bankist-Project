@@ -44,10 +44,39 @@ const header = document.querySelector('.header');
 // header.prepend(message);
 header.append(message);
 // header.append(message.cloneNode(true));
-header.before(message);
+// header.before(message);
 
 document
   .querySelector('.btn--close-cookie')
   .addEventListener('click', function () {
     message.remove();
   });
+
+//styles
+
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+console.log(message.style.backgroundColor);
+console.log(getComputedStyle(message).height);
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+//attributes
+
+const logo = document.querySelector('.nav__logo');
+console.log(logo.src);
+console.log(logo.alt);
+logo.alt = 'Beautiful Minimalistic logo';
+console.log(logo.alt);
+logo.setAttribute('alt', 'Bankist');
+console.log(logo.getAttribute('src'));
+
+const link = document.querySelector('.twitter-link');
+console.log(link.href);
+console.log(link.getAttribute('href'));
+
+//classes
+
+logo.classList.add('c', 'j');
