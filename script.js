@@ -61,7 +61,7 @@ console.log(getComputedStyle(message).height);
 message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
 
-document.documentElement.style.setProperty('--color-primary', 'orangered');
+// document.documentElement.style.setProperty('--color-primary', 'orangered');
 
 //attributes
 
@@ -80,3 +80,13 @@ console.log(link.getAttribute('href'));
 //classes
 
 logo.classList.add('c', 'j');
+
+// Smooth Scrolling
+document
+  .querySelector('.btn--scroll-to')
+  .addEventListener('click', function (e) {
+    e.preventDefault();
+    document
+      .querySelector('#section--1')
+      .scrollIntoView({ behavior: 'smooth' });
+  });
